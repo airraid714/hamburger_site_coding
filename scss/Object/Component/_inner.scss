@@ -1,0 +1,34 @@
+@use "../../Foundation/variable" as *;
+.c-inner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.c-inner__button--close{
+    display: flex;
+    justify-content: right;
+}
+
+
+
+
+
+.c-inner__articles{
+    padding: 5%;
+
+    @include breakpoint(tablet){
+        padding: 7%;
+    }
+    @include breakpoint(pc){
+        padding: 6%;
+    }
+}
+.c-inner__text{
+    padding-top: 30px;
+    @include breakpoint(tablet){
+        padding-top: 60px;
+    }
+}

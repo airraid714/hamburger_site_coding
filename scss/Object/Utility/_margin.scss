@@ -1,0 +1,28 @@
+@use "../../Foundation/variable" as *;
+
+.u-margin__bottom1{
+    margin-bottom: 24px;
+}
+.u-margin__bottom60{
+    margin-bottom: 60px;
+}
+.u-margin__text{
+    margin-top: 10px;
+    margin-right: 53px;
+}
+.u-margin__top2{
+    margin-top: 24px;
+}
+.u-margin__archive-tittle{
+    margin-bottom: 30px;
+    @include breakpoint(tablet){
+        margin-bottom: 25px;
+    }
+}
+.u-margin__ul{
+    margin-left: 20px;
+    margin-top: 20px;
+}
+.u-margin__ol{
+    margin-top: 20px;
+}

@@ -1,0 +1,45 @@
+@use "../../Foundation/variable" as *;
+.c-layer__container{
+    &.is-open{ 
+        position: absolute;
+        background: rgba(0,0,0,0.5);
+        height: 100%;
+        width: 100%;
+        top: 0;
+        z-index: 5;
+
+        @include breakpoint(pc){
+            display: none;
+        }
+    }
+}
+/*  .c-layer__sidebar{
+    position: absolute;
+    background: rgba(0,0,0,0.5);
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 100%;
+    z-index: 5;
+
+
+    &.is-open{
+        left: 0;
+        transition: all 0.5s;
+    }
+    
+    @include breakpoint(tablet){
+        display: none;
+        transition: all 0.3;
+    }
+
+}   */
+
+.c-layer__img{ 
+    position: absolute;
+    background: rgba(0,0,0,0.3);
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+}

@@ -1,0 +1,58 @@
+@use "../../Foundation/variable" as *;
+
+.c-tittle__site-tittle{
+    font-size: 40px;
+    margin-bottom: 38px;
+    color: $gray;
+    transition: all 0.2s;
+
+
+    @include breakpoint(pc){
+        margin-bottom: 0;
+        font-size: 64px;
+        transition: all 0.2s;
+    }
+}
+
+.c-tittle__mainvisual{
+    font-size: 36px;
+    color: $white;
+}
+.c-tittle__contents{
+    font-size: 22px;
+    font-weight: bold;
+}
+.c-tittle__item{
+    font-size: 20px;
+    font-weight: bold;
+    color: $white;
+
+    @include breakpoint(tpc){
+        font-size: 36px;
+    }
+}
+.c-tittle__articles-h2{
+    font-size: 28px;
+    font-weight: bold;
+    color: $brown;
+
+}
+.c-tittle__articles-h3{
+    font-size: 24px;
+    font-weight: bold;
+    color: $brown;
+}
+
+.c-tittle__articles-h456{
+    font-size: 20px;
+    font-weight: bold;
+    color: $brown;
+
+}
+
+.c-tittle__text{
+    color: $white;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+}

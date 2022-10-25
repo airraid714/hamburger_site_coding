@@ -1,0 +1,73 @@
+@use "../../Foundation/variable" as *;
+
+.p-section__wrapper{
+    padding: 20px 20px 30px;
+    
+    @include breakpoint(tablet){
+        display: flex;
+        padding: 40px;
+        justify-content: space-between;
+    }
+    @include breakpoint(pc){
+        padding: 60px 55px 65px
+    }
+}
+.p-section__inner{
+    margin-bottom: 20px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+ 
+    @include breakpoint(tablet){
+        width: 48%;
+        margin-bottom: 0;
+    }
+}
+.p-section__background1{
+    background-image: url("../img/FrontPage/contents_visual2(sp).jpg");
+
+    background-size: cover;
+}
+.p-section__background2{
+    background-image: url("../img/FrontPage/contents_visual1(sp).jpg");
+    background-size: cover;
+}
+
+.p-section__tittle{
+    font-size: 41px;
+    font-family: 'Roboto';
+    font-weight: bold;
+    position: relative;
+    margin-bottom: 60%;
+    
+}
+.p-section__tittle::after{
+    content: "";
+    height: 3px;
+    width: 37px;
+    background-color: $white;
+    position: absolute;
+    top:60px;
+    left:0;
+}
+.p-section__list{
+    color: $brown;
+    background: $background-text;
+    margin-bottom: 15px;
+    font-size: 16px;
+    line-height: 1.5;
+    padding: 7px 10px 15px;
+    font-family: 'M PLUS Rounded 1c';
+
+
+}
+
+.p-section__color1{
+    color: $white-clear;
+    
+}
+.p-section__color2{
+    color: $white;
+
+}

@@ -1,0 +1,9 @@
+@use "../../Foundation/variable" as *;
+
+.p-articles{
+    padding: 30px 20px ;
+
+    @include breakpoint(tablet){
+        padding: 36px 42px;
+    }
+}
